@@ -14,8 +14,14 @@ DataMapper::Property::String.length(255)
 
 # Migrations and seeding.
 #
-# Make a manual connection string for migrations - kind of a pain - tunnel in and do `rake dm:migrate` and `rake seed` locally.
-# While being connected to the remote database. `vmc tunnel` is your friend.
+# `bundle exec vmc tunnel` into the Posgresql CF instance.
+# 
+# Edit the below manual database connection string. Once you've done that:
+#
+# `PADRINO_ENV=production rake dm:migrate`
+# `PADRINO_ENV=production rake seed`
+#
+# While being connected to the remote database.
 #
 # postgres_connection = "postgres://username:password@127.0.0.1:port/name" 
 
