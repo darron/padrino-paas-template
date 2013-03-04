@@ -26,8 +26,13 @@ gem 'therubyracer'
 
 gem 'foreman'
 
+gem 'json'
+
 group :development do
   gem 'dm-sqlite-adapter'
+  gem 'tunnel-vmc-plugin'
+  gem 'vmc', "~> 0.4.7"
+  gem 'caldecott'
 end
 
 group :production do
